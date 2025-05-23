@@ -10,6 +10,28 @@ body {
   margin: auto;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: block;               /* makes the entire card clickable */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;        /* remove the default blue underline */
+  color: inherit;               /* keep your body text color */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 header, section, footer {
   margin-bottom: 40px;
 }
